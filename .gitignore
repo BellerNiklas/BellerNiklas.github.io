@@ -1,0 +1,26 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor/IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary Files
+*.tmp
+*.bak
+*.log
+
+# Build Files
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Personal Files (uncomment if you want to keep certain files private)
+# drafts/
+# notes.md
