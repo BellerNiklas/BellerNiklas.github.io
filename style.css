@@ -164,14 +164,15 @@ a:hover {
 }
 
 .profile-photo img {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    object-fit: contain;
-    object-position: center;
+    object-fit: cover;
+    object-position: center top;
     border: 4px solid var(--accent-color);
     box-shadow: var(--shadow);
     background-color: var(--white);
+    padding: 10px;
 }
 
 .photo-note {
