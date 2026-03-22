@@ -1,87 +1,38 @@
-# Academic Profile Website
+# Niklas Beller Website
 
 Personal academic website hosted on GitHub Pages.
 
-## About
+Live site: [https://bellerniklas.github.io](https://bellerniklas.github.io)
 
-This is a simple, clean academic profile website designed for PhD students and researchers. The site features:
+## Repository Structure
 
-- **About Section**: Profile photo, bio, and research interests
-- **CV Section**: Downloadable CV and inline education/experience details
-- **Contact Section**: Email, social media links, and office location
+- `index.html` - homepage
+- `style.css` - site styling
+- `profile.jpg` - portrait used on the homepage
+- `cv.pdf` - current CV shown on the site
+- `cv.tex` - LaTeX source for the CV
 
-## Live Site
+## Local Preview
 
-Visit the live website at: [https://BellerNiklas.github.io](https://BellerNiklas.github.io)
-
-## How to Update Your Information
-
-### 1. Personal Information
-
-Edit `index.html` and replace all placeholders marked with `[...]`:
-
-- `[Your Name]` - Your full name
-- `[PhD Student in Economics / Your Field]` - Your current title/position
-- `[Your University / Institution]` - Your institution
-- `[Your bio and research interests]` - Your personal information
-
-### 2. Add Your Profile Photo
-
-1. Add your photo to the repository as `profile.jpg` (or `profile.png`)
-2. Update the image source in `index.html` if using a different filename
-3. Recommended size: 400x400 pixels or larger (will be displayed as 180x180)
-
-### 3. Add Your CV
-
-Upload your CV as `cv.pdf` to the repository root, or update the link in `index.html` to point to your CV location.
-
-### 4. Customize Colors (Optional)
-
-Edit `style.css` at the top where CSS variables are defined:
-
-```css
-:root {
-    --primary-color: #2c3e50;    /* Dark blue-gray for headers */
-    --secondary-color: #34495e;  /* Medium gray for text */
-    --accent-color: #3498db;     /* Professional blue for links */
-    --light-bg: #f8f9fa;         /* Light gray backgrounds */
-}
-```
-
-## Local Development
-
-To preview the website locally:
-
-1. Open `index.html` in your web browser
-2. Or use a local server:
-   ```bash
-   python -m http.server 8000
-   ```
-   Then visit `http://localhost:8000`
-
-## Publishing Updates
-
-After making changes:
+Open `index.html` directly in a browser, or run:
 
 ```bash
-git add .
-git commit -m "Update profile information"
-git push
+python -m http.server 8000
 ```
 
-Changes will appear on your live site within a few minutes.
+Then visit `http://localhost:8000`.
 
-## Technologies
+## Updating Content
 
-- Pure HTML5 and CSS3 (no frameworks required)
-- Responsive design (mobile-friendly)
-- Semantic HTML for accessibility
-- Clean, academic styling
+- Homepage text and links: edit `index.html`
+- Visual styling: edit `style.css`
+- CV: replace `cv.pdf` and, if needed, update `cv.tex`
+- Profile image: replace `profile.jpg`
 
-## License
+## Publishing
 
-Feel free to use this template for your own academic website.
-
----
-
-**Last Updated**: January 2026
+```bash
+git add index.html style.css cv.pdf cv.tex profile.jpg README.md .gitignore
+git commit -m "Update website"
+git push
+```

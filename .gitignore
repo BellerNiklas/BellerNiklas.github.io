@@ -19,13 +19,13 @@ desktop.ini
 *.fls
 *.out
 *.synctex.gz
+tmpclaude-*-cwd
+current_home.png
+homepage_preview*.png
+ref_*.png
 
 # Build Files
 _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
-
-# Personal Files (uncomment if you want to keep certain files private)
-# drafts/
-# notes.md
