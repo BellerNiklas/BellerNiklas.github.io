@@ -1,0 +1,222 @@
+%-------------------------
+% CV in LaTeX
+% Based on the resume format shared by the user
+%-------------------------
+
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.3in}
+\setlength{\footskip}{4pt}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\pdfgentounicode=1
+
+% Sections formatting
+\titleformat{\section}{\vspace{-7pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-2pt}}}
+}
+
+\newcommand{\gradevalue}[1]{{\bfseries\normalsize #1}}
+\newcommand{\profname}[1]{{\bfseries\normalsize #1}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in, itemsep=1pt, parsep=0pt, topsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+\begin{document}
+
+%---------- HEADING ----------
+\begin{center}
+    {\Huge \bfseries Niklas Beller} \\ \vspace{4pt}
+    \small
+    \faMobile \hspace{.5pt} \href{tel:+4915231712161}{+49 (0)152 31712161}
+    $|$
+    \faAt \hspace{.5pt} \href{mailto:s82nbell@uni-bonn.de}{s82nbell@uni-bonn.de}
+    $|$
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/niklas-beller-2204881b4/}{LinkedIn}
+    $|$
+    \faGithub \hspace{.5pt} \href{https://github.com/BellerNiklas}{GitHub}
+    $|$
+    \faGlobe \hspace{.5pt} \href{https://BellerNiklas.github.io}{Website}
+    $|$
+    \faMapMarker \hspace{.5pt} Bonn, Germany
+\end{center}
+
+%----------- EDUCATION -----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Bonn}{Oct 2024 -- Oct 2026}
+      {M.Sc. Economics}{Grade: \gradevalue{1.1} (Top 5\%)}
+      \resumeItemListStart
+        \resumeItem{Coursework: Real Analysis and Algebra (1.0); PhD-level Dynamic Macroeconomics (1.3) and Labor Economics (1.0).}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {ENSAE Paris}{Sep 2025 -- Jan 2026}
+      {Exchange Semester in Economics}{Grade: \gradevalue{16.6/20} (Top 10\%)}
+      \resumeItemListStart
+        \resumeItem{Coursework: Monetary Economics (18); Randomized Methods and Application (19).}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {University of Mannheim}{Sep 2021 -- Sep 2024}
+      {B.Sc. Economics}{Grade: \gradevalue{1.6}}
+      \resumeItemListStart
+        \resumeItem{Math track: Real Analysis and Algebra I/II (1.3); Statistics I/II (1.0).}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Charles University Prague}{Oct 2023 -- Feb 2024}
+      {Exchange Semester in Economics}{Grade: \gradevalue{1.3}; Top of class in International and Financial Economics}
+  \resumeSubHeadingListEnd
+
+%----------- RESEARCH EXPERIENCE -----------
+\section{Research Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {European Central Bank}{Jul 2026 -- Jul 2027}
+      {Incoming Trainee, International Policy Analysis and Finance Division}{Frankfurt am Main, Germany}
+      \resumeItemListStart
+        \resumeItem{One-year traineeship in the International Policy Analysis and Finance Division, starting in July 2026.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {University of Mannheim}{Oct 2022 -- Oct 2025}
+      {Research Assistant to Professor \profname{Tom Krebs}}{Mannheim, Germany}
+      \resumeItemListStart
+        \resumeItem{Worked on public-policy projects on fiscal rules and labor markets; coordinated two RAs, built datasets from Destatis and other public sources, and contributed to empirical analysis and literature reviews.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Kiel Institute for the World Economy}{Oct 2024 -- Apr 2025}
+      {Research Assistant to Professor \profname{Moritz Schularick}}{Kiel, Germany}
+      \resumeItemListStart
+        \resumeItem{Worked on a project on the effects of inflation surprises on historical asset returns; updated post-2020 series in the Jord\`a--Schularick--Taylor Macrohistory Database and implemented Kalman filtering and state-space methods in R.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {German Council of Economic Experts (GCEE)}{Aug 2024 -- Oct 2024}
+      {Full-time Research Assistant}{Wiesbaden, Germany}
+      \resumeItemListStart
+        \resumeItem{Worked on the financial-markets chapter of the annual report with Professor \profname{Malmendier} and the financial markets team; analyzed ECB datasets on innovation and the stability of the German financial sector.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {University of Mannheim}{Mar 2024 -- Aug 2024}
+      {Research Assistant to Professor \profname{Moritz Kuhn}}{Mannheim, Germany}
+      \resumeItemListStart
+        \resumeItem{Worked on a project on unrealized and realized capital gains; linked panel data on the stock holdings of 20,000+ Dutch households with daily stock prices in Stata and DataStream to study distributional effects.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%----------- RESEARCH PROJECT -----------
+\section{Research Project}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Bonn}{2025 -- Present}
+      {Master's Thesis: Fiscal Policy and Household Inflation Expectations during Germany's Energy Crisis}{Bonn, Germany}
+      \resumeItemListStart
+        \resumeItem{Studies how Germany's 2022--23 energy-crisis fiscal measures shaped household inflation expectations using Bundesbank BOP-HH microdata, with a focus on announcement versus realized-bill effects and heterogeneity by energy exposure and policy knowledge.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%----------- SCHOLARSHIPS -----------
+\section{Scholarships}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {Merit-based Scholarship, Friedrich-Ebert-Foundation}{2022 -- 2026}
+  \resumeSubHeadingListEnd
+
+%----------- SKILLS -----------
+\section{Skills \& Interests}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Languages:} German (native), English (fluent), French (basic) \\ \vspace{2pt}
+        \textbf{Programming:} R, MATLAB, Stata, Python, LaTeX, Git/GitHub, agentic coding (Claude Code, Codex) \\ \vspace{2pt}
+        \textbf{Interests:} Cinema, vinyl records, football, badminton, traveling
+    }}
+  \resumeSubHeadingListEnd
+
+%----------- PROFESSIONAL EXPERIENCE -----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {PricewaterhouseCoopers (PwC)}{Jan 2023 -- Mar 2023}
+      {Intern}{Stuttgart, Germany}
+      \resumeItemListStart
+        \resumeItem{Audited annual financial statements, performed fraud-risk analysis, and used SAP in financial-reporting workflows.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Economic Forum of the Social Democratic Party Germany e.\ V.}{Jul 2022 -- Sep 2022}
+      {Intern}{Berlin, Germany}
+      \resumeItemListStart
+        \resumeItem{Prepared meetings for the economic scientific advisory board and co-organized conferences with former German Chancellor and Finance Minister on economic policy.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%----------- VOLUNTEERING -----------
+\section{Volunteering \& Leadership}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Mannheim}{Jun 2023 -- Sep 2024}
+      {Elected Member of the Senate}{Mannheim, Germany}
+      \resumeItemListStart
+        \resumeItem{Participated in Senate sessions and prepared background material for appointments.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {European Election Campaign}{Feb 2024 -- Jun 2024}
+      {Campaign Lead with Dr.\ Sebastian Camarero}{Germany}
+      \resumeItemListStart
+        \resumeItem{Led a campaign on European fiscal, economic, and defense policy and organized panel discussions with a former Vice-President of the European Parliament.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}

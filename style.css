@@ -263,6 +263,12 @@ a:hover {
     line-height: 1.5;
 }
 
+.cv-emphasis {
+    font-weight: 700;
+    font-size: 1.06em;
+    color: var(--primary-color);
+}
+
 .publication {
     line-height: 1.8;
     padding-left: 1.5rem;
