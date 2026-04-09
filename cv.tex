@@ -63,6 +63,14 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumeCompactProjectHeading}[2]{
+  \vspace{-5pt}\item
+    {\small
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\
+    \end{tabular*}}\vspace{-10pt}
+}
+
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in, itemsep=1pt, parsep=0pt, topsep=2pt]}
@@ -94,14 +102,14 @@
       {University of Bonn}{Oct 2024 -- Oct 2026}
       {M.Sc. Economics}{Grade: \gradevalue{1.1} (Top 5\%)}
       \resumeItemListStart
-        \resumeItem{Coursework: Real Analysis and Algebra (1.0); PhD-level Dynamic Macroeconomics (1.3) and Labor Economics (1.0).}
+        \resumeItem{Selected Coursework: Graduate Real Analysis and Algebra (1.0); Dynamic Macroeconomics and Labor Economics (taken jointly with PhD students; 1.3 and 1.0).}
       \resumeItemListEnd
 
     \resumeSubheading
       {ENSAE Paris}{Sep 2025 -- Jan 2026}
       {Exchange Semester in Economics}{Grade: \gradevalue{16.6/20} (Top 10\%)}
       \resumeItemListStart
-        \resumeItem{Coursework: Monetary Economics (18); Randomized Methods and Application (19).}
+        \resumeItem{Selected Coursework: Monetary Economics (18/20); Randomized Methods and Applications (19/20).}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -155,32 +163,46 @@
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
-%----------- RESEARCH PROJECT -----------
-\section{Research Project}
+%----------- RESEARCH PROJECTS -----------
+\section{Research Projects}
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {University of Bonn}{2025 -- Present}
-      {Master's Thesis: Fiscal Policy and Household Inflation Expectations during Germany's Energy Crisis}{Bonn, Germany}
+    \resumeProjectHeading
+      {Fiscal Policy and Household Inflation Expectations during Germany's Energy Crisis (Master's Thesis)}{}
       \resumeItemListStart
-        \resumeItem{Studies how Germany's 2022--23 energy-crisis fiscal measures shaped household inflation expectations using Bundesbank BOP-HH microdata, with a focus on announcement versus realized-bill effects and heterogeneity by energy exposure and policy knowledge.}
+        \resumeItem{Uses monthly Bundesbank BOP-HH panel data and a hand-built policy timeline to estimate announcement-focused event studies around Germany's 2022--23 energy-crisis measures, comparing gas and district-heating households with oil-heated controls to distinguish announcement from realized-bill effects.}
+        \resumeItem{Combines this with an RCT on the energy price brakes, which randomly corrects misinformed households about the policy incentives, to study mechanism and implementation effects through policy knowledge and intended energy use.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {Replication of Comunale \& Nguyen (2025): MacroEconomic Uncertainty for the Euro Area}{}
+      \resumeItemListStart
+        \resumeItem{Built a large monthly macro-financial database for 19 euro-area countries, combining more than 1,700 variables from Eurostat, ECB, OECD, and BIS into cleaned country-level and euro-area panels for uncertainty measurement.}
+        \resumeItem{Implemented the downstream calculations: correlation filtering, factor extraction, forecast-error estimation, stochastic-volatility models in R, horizon-specific uncertainty aggregation, and final comparison plots for euro-area and country-level MEU series.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 %----------- SCHOLARSHIPS -----------
 \section{Scholarships}
-  \resumeSubHeadingListStart
-    \resumeProjectHeading
-      {Merit-based Scholarship, Friedrich-Ebert-Foundation}{2022 -- 2026}
-  \resumeSubHeadingListEnd
+  \vspace{5pt}
+  \begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, parsep=0pt, topsep=2pt]
+    \resumeCompactProjectHeading
+      {Merit-based Scholarship for Bachelor studies (11,000 EUR), Friedrich-Ebert-Foundation}{2022 -- 2024}
+    \resumeCompactProjectHeading
+      {EU Erasmus Scholarship for First-Gen Academics (3,713 EUR)}{2023 -- 2024}
+    \resumeCompactProjectHeading
+      {Merit-based Scholarship for Master studies (7,200 EUR), Friedrich-Ebert-Foundation}{2024 -- 2026}
+    \resumeCompactProjectHeading
+      {EU Erasmus Scholarship for First-Gen Academics (3,182 EUR)}{2025 -- 2026}
+  \end{itemize}
 
 %----------- SKILLS -----------
 \section{Skills \& Interests}
   \resumeSubHeadingListStart
-    \small{\item{
-        \textbf{Languages:} German (native), English (fluent), French (basic) \\ \vspace{2pt}
-        \textbf{Programming:} R, MATLAB, Stata, Python, LaTeX, Git/GitHub, agentic coding (Claude Code, Codex) \\ \vspace{2pt}
-        \textbf{Interests:} Cinema, vinyl records, football, badminton, traveling
-    }}
+    \item{
+        \normalsize
+        \textbf{Programming:} Python, MATLAB, LaTeX, agentic coding (Claude, Codex); \textbf{Statistical Software:} R, Stata \\ \vspace{2pt}
+        \textbf{Languages:} German (native), English (fluent), French (A2); \textbf{Interests:} Cinema, vinyl records, badminton, traveling
+    }
   \resumeSubHeadingListEnd
 
 %----------- PROFESSIONAL EXPERIENCE -----------
@@ -205,6 +227,13 @@
 \section{Volunteering \& Leadership}
   \resumeSubHeadingListStart
     \resumeSubheading
+      {FiscalFuture}{Jul 2022 -- Present}
+      {Volunteer}{Germany}
+      \resumeItemListStart
+        \resumeItem{Designed and delivered educational workshops on fiscal policy for broad public audiences and contributed to public debates on fiscal policy with members of the German parliament.}
+      \resumeItemListEnd
+
+    \resumeSubheading
       {University of Mannheim}{Jun 2023 -- Sep 2024}
       {Elected Member of the Senate}{Mannheim, Germany}
       \resumeItemListStart
@@ -212,11 +241,12 @@
       \resumeItemListEnd
 
     \resumeSubheading
-      {European Election Campaign}{Feb 2024 -- Jun 2024}
-      {Campaign Lead with Dr.\ Sebastian Camarero}{Germany}
+      {European Parliament Election}{Feb 2024 -- Jun 2024}
+      {Campaign Lead with Dr.\ Sebastian Camarero}{Mannheim, Germany}
       \resumeItemListStart
         \resumeItem{Led a campaign on European fiscal, economic, and defense policy and organized panel discussions with a former Vice-President of the European Parliament.}
       \resumeItemListEnd
+
   \resumeSubHeadingListEnd
 
 \end{document}
