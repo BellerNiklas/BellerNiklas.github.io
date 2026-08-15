@@ -11,6 +11,7 @@ desktop.ini
 *~
 
 # Temporary Files
+tmp/
 *.tmp
 *.bak
 *.log
